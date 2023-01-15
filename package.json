@@ -1,0 +1,29 @@
+{
+  "name": "brain-progression",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "*simple math console game*",
+  "main": "brain-progression.js",
+  "bin": {
+    "brain-progression": "bin/brain-progression.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justsega/brain-progression.git"
+  },
+  "author": "Sergey Syromyatnikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justsega/brain-progression/issues"
+  },
+  "homepage": "https://github.com/justsega/brain-progression#readme",
+  "dependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.4",
+    "readline-sync": "^1.4.10"
+  }
+}
