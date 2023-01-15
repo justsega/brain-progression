@@ -38,7 +38,8 @@ const getQuestion = () => {
   const item = Math.floor(Math.random() * (arr.length - 1));
   const controlResult = arr[item];
   arr[item] = '..';
-  console.log(`Question: ${arr}`);
+  const strArr = arr.join(' ');
+  console.log(`Question: ${strArr}`);
   return [arr, controlResult];
 };
 
