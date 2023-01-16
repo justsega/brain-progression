@@ -1,10 +1,6 @@
-import readlineSync from 'readline-sync';
-import { getUserName, getRandomNumber } from './lib.js';
-
-const getUserAnswer = () => {
-  const userAnswer = readlineSync.question('Your answer: ');
-  return userAnswer;
-};
+import {
+  getUserName, getRandomNumber, getUserAnswer, checkUserAnswer,
+} from './lib.js';
 
 const getProgression = () => {
   const firstMemberOfProgression = getRandomNumber();
@@ -30,21 +26,6 @@ const getQuestion = () => {
   const strArr = arr.join(' ');
   console.log(`Question: ${strArr}`);
   return [arr, controlResult];
-};
-
-const checkUserAnswer = (answer, control) => {
-  const usrAnswer = Number(answer);
-  const numControl = Number(control);
-  switch (usrAnswer === numControl) {
-    case true:
-      console.log('Correct!');
-      return true;
-    case false:
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${control}'.`);
-      return false;
-    default:
-      return false;
-  }
 };
 
 const startGame = () => {
